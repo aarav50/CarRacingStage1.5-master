@@ -98,19 +98,27 @@ class Game {
     var b=createElement("h1")
     if(player.db==1){
       clear()
-      b.html("your "+"1st"+"place"+" and you won the newest macbook")  
+      b.html("your "+"1st")  
+      clear()
+      
     }
     if(player.db==2){
       clear()
-      b.html("your "+"2nd"+"place"+" and you won the newest iphone")  
+      b.html("your "+"2nd")  
+      clear()
+      
     }
     if(player.db==3){
       clear()
-      b.html("your "+"3rd"+"place"+" and you won the newest ipad")  
+      b.html("your "+"3rd")  
+      clear()
+   
     }
     if(player.db==4){
       clear()
-      b.html("your "+"4th"+"place"+" and you won the newest aripods")  
+      b.html("your "+"4th")  
+      clear()
+
     }
 
     b.position(displayWidth/2,displayHeight/2)
