@@ -104,7 +104,7 @@ class Game {
     }
     if(player.db==2){
       clear()
-      b.html("your "+"2nd")  
+      b.html("your "+"2ndd")  
       clear()
       
     }
