@@ -44,7 +44,7 @@ class Game {
     form.hide();
 
     Player.getPlayerInfo();
-    
+  player.blabla()
     if(allPlayers !== undefined){
       //var display_position = 100;
       background(track2i)
@@ -87,13 +87,32 @@ class Game {
     }
     if(      player.distance >4360      ){
       gameState=2
+      player.db++
+      Player.blablabla(player.db)
     }
     
     drawSprites();
   }
   end() {
+
     var b=createElement("h1")
-    b.html("you won the newest macbook")
+    if(player.db==1){
+      clear()
+      b.html("your "+"1st"+"place"+" and you won the newest macbook")  
+    }
+    if(player.db==2){
+      clear()
+      b.html("your "+"2nd"+"place"+" and you won the newest iphone")  
+    }
+    if(player.db==3){
+      clear()
+      b.html("your "+"3rd"+"place"+" and you won the newest ipad")  
+    }
+    if(player.db==4){
+      clear()
+      b.html("your "+"4th"+"place"+" and you won the newest aripods")  
+    }
+
     b.position(displayWidth/2,displayHeight/2)
     
   }

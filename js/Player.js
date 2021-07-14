@@ -2,6 +2,7 @@ class Player {
   constructor(){
     this.index = null;
     this.distance = 0;
+this.db=null
     this.name = null;
   }
 
@@ -32,4 +33,15 @@ class Player {
       allPlayers = data.val();
     })
   }
+ blabla() {
+  database.ref('rank').on("value",(data)=>{
+   
+      this.db = data.val();
+  })
+
+}
+static blablabla(data){
+  database.ref('/').update({rank:data})
+
+}
 }
